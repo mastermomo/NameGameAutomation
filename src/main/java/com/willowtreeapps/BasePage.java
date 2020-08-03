@@ -195,36 +195,6 @@ public class BasePage {
 
         Assert.assertNotSame(correctName, nextPageName);
         Assert.assertNotEquals(images, nextPageImages);
-
-
-//        String correctName = driver.findElement(By.id("name")).getText();
-//
-//        List<WebElement> images = driver.findElements(By.className("photo"));
-//
-//        int k = 0;
-//        while (k < images.size()) {
-//        WebElement personImage = images.get(k).findElement(By.className("name"));
-//
-//            if (personImage.getText().equals(correctName)) {
-//                images.get(k).click();
-//
-//                sleep(5000);
-//
-//                List<WebElement> imagesPageTwo = driver.findElements(By.className("photo"));
-//
-//                for (int i = 0; i < imagesPageTwo.size(); i++) {
-//                    WebElement personImagePageTwo = imagesPageTwo.get(i).findElement(By.className("name"));
-//
-//                    try {
-//                        if (personImage.getText().equals(personImagePageTwo)) {
-//                        }
-//                    }
-//                    catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        }
     }
 
     public void sleep(int timeInMillis) {
